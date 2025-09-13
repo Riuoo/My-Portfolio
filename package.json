@@ -1,0 +1,32 @@
+{
+  "name": "roderick-tajos-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Roderick P. Tajos - IT Student & Aspiring Developer",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'No build step required for static site'",
+    "dev": "npx netlify dev",
+    "deploy": "netlify deploy --prod"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "developer",
+    "IT",
+    "student",
+    "netlify"
+  ],
+  "author": "Roderick P. Tajos",
+  "license": "MIT",
+  "devDependencies": {
+    "netlify-cli": "^15.0.0"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Riuoo/portfolio"
+  },
+  "homepage": "https://roderick-tajos.netlify.app"
+}
