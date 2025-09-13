@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initCarousel();
     initScrollAnimations();
     initTypingEffect();
-    initContactForm();
 });
 
 // Theme Toggle Functionality
@@ -404,68 +403,8 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-// Contact Form Handler for Netlify
-function initContactForm() {
-    const contactForm = document.getElementById('contact-form');
-    if (!contactForm) return;
-
-    contactForm.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(contactForm);
-        const submitButton = contactForm.querySelector('button[type="submit"]');
-        const originalButtonText = submitButton.innerHTML;
-        
-        // Show loading state
-        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-        contactForm.classList.add('form-submitting');
-        
-        // Remove any existing messages
-        const existingMessage = contactForm.querySelector('.form-success, .form-error');
-        if (existingMessage) {
-            existingMessage.remove();
-        }
-        
-        try {
-            const response = await fetch('/', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(formData).toString()
-            });
-            
-            if (response.ok) {
-                // Show success message
-                const successMessage = document.createElement('div');
-                successMessage.className = 'form-success';
-                successMessage.innerHTML = '<i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.';
-                contactForm.insertBefore(successMessage, contactForm.firstChild);
-                
-                // Reset form
-                contactForm.reset();
-                
-                // Show notification
-                showNotification('Message sent successfully!', 'success');
-            } else {
-                throw new Error('Form submission failed');
-            }
-        } catch (error) {
-            console.error('Form submission error:', error);
-            
-            // Show error message
-            const errorMessage = document.createElement('div');
-            errorMessage.className = 'form-error';
-            errorMessage.innerHTML = '<i class="fas fa-exclamation-circle"></i> Sorry, there was an error sending your message. Please try again.';
-            contactForm.insertBefore(errorMessage, contactForm.firstChild);
-            
-            // Show notification
-            showNotification('Failed to send message. Please try again.', 'error');
-        } finally {
-            // Reset button state
-            submitButton.innerHTML = originalButtonText;
-            contactForm.classList.remove('form-submitting');
-        }
-    });
-}
+// Netlify Forms handles form submission automatically
+// No JavaScript needed - forms are processed at deploy time
 
 // Export functions for testing (if needed)
 if (typeof module !== 'undefined' && module.exports) {
@@ -473,7 +412,6 @@ if (typeof module !== 'undefined' && module.exports) {
         initThemeToggle,
         initNavigation,
         initCarousel,
-        initContactForm,
         showNotification
     };
 }
