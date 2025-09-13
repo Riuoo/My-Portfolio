@@ -71,15 +71,9 @@ function initNavigation() {
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
         if (window.scrollY > 100) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-            if (document.body.getAttribute('data-theme') === 'dark') {
-                navbar.style.background = 'rgba(15, 23, 42, 0.98)';
-            }
+            navbar.classList.add('scrolled');
         } else {
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            if (document.body.getAttribute('data-theme') === 'dark') {
-                navbar.style.background = 'rgba(15, 23, 42, 0.95)';
-            }
+            navbar.classList.remove('scrolled');
         }
     });
     
