@@ -51,37 +51,94 @@
 
     <!-- Home Section -->
     <section id="home" class="home">
+        <!-- Animated Background Elements -->
+        <div class="hero-bg">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+        </div>
+        
         <div class="container">
             <div class="home-content">
+                <!-- Left Side - Text Content -->
                 <div class="home-text">
-                    <h1 class="home-title">
-                        Hi, I'm <span class="highlight">Roderick P. Tajos</span>
-                    </h1>
-                    <h2 class="home-subtitle">IT Student & Aspiring Developer</h2>
-                    <p class="home-description">
-                        Passionate about technology and software development. Currently pursuing my degree in Information Technology 
-                        while building innovative projects and expanding my skills in web development, programming, and system design.
-                    </p>
-                    <div class="home-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <div class="greeting">
+                        <span class="wave">👋</span>
+                        <span class="greeting-text">Hello, I'm</span>
                     </div>
+                    
+                    <h1 class="home-title">
+                        <span class="name-gradient">Roderick P. Tajos</span>
+                    </h1>
+                    
+                    <div class="role-container">
+                        <span class="role-prefix">I'm a</span>
+                        <div class="typing-container">
+                            <span class="home-subtitle"></span>
+                            <span class="cursor">|</span>
+                        </div>
+                    </div>
+                    
+                    <p class="home-description">
+                        Crafting digital experiences through code. Currently pursuing Information Technology 
+                        while building innovative projects and expanding expertise in modern web technologies.
+                    </p>
+                    
+                    <div class="cta-section">
+                    <div class="home-buttons">
+                            <a href="#projects" class="btn btn-primary btn-modern">
+                                <span>Explore My Work</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary btn-modern">
+                                <span>Let's Connect</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </a>
+                    </div>
+                        
                     <div class="social-links">
-                        <a href="https://github.com/Riuoo" target="_blank" class="social-link">
+                            <a href="https://github.com/Riuoo" target="_blank" class="social-link" data-tooltip="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.facebook.com/roderick.tajos.3" target="_blank" class="social-link">
+                            <a href="https://www.facebook.com/roderick.tajos.3" target="_blank" class="social-link" data-tooltip="Facebook">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="mailto:rodericktajos02@gmail.com" class="social-link">
+                            <a href="mailto:rodericktajos02@gmail.com" class="social-link" data-tooltip="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
+                        </div>
                     </div>
                 </div>
-                <div class="home-image">
+                
+                <!-- Right Side - Image with Creative Elements -->
+                <div class="home-visual">
+                    <div class="image-wrapper">
                     <div class="image-container">
-                        <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img">
+                            <img src="assets/profile.jpg" alt="Roderick Tajos" class="profile-img">
                         <div class="image-overlay"></div>
+                        </div>
+                        
+                        <!-- Floating Tech Icons -->
+                        <div class="tech-floating">
+                            <div class="tech-icon tech-1">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="tech-icon tech-2">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="tech-icon tech-3">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="tech-icon tech-4">
+                                <i class="fab fa-php"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Decorative Elements -->
+                        <div class="decorative-circle circle-1"></div>
+                        <div class="decorative-circle circle-2"></div>
+                        <div class="decorative-circle circle-3"></div>
                     </div>
                 </div>
             </div>
@@ -93,126 +150,202 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">My Projects</h2>
-                <p class="section-subtitle">Here are some of the projects I've worked on</p>
+                <p class="section-subtitle">Explore my work across different technologies and domains</p>
             </div>
+            
+            <!-- Project Filter -->
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-category="fullstack">
                     <div class="project-image">
                         <img src="assets/lucias-pos.png" alt="Lucia's Point of Sale">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link" target="_blank">
+                                <a href="#" class="project-link" target="_blank" data-tooltip="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="https://github.com/Riuoo/Lucias-POS" class="project-link" target="_blank">
+                                <a href="https://github.com/Riuoo/Lucias-POS" class="project-link" target="_blank" data-tooltip="View Code">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">Completed</span>
+                        </div>
                     </div>
                     <div class="project-content">
+                        <div class="project-header">
                         <h3 class="project-title">Lucia's Point of Sale</h3>
+                            <div class="project-year">2024</div>
+                        </div>
                         <p class="project-description">
-                            A full-stack e-commerce platform with user authentication, payment integration, and admin dashboard.
+                            A comprehensive e-commerce platform featuring user authentication, payment processing, 
+                            inventory management, and admin dashboard with real-time analytics.
                         </p>
+                        <div class="project-features">
+                            <span class="feature-tag">User Authentication</span>
+                            <span class="feature-tag">Payment Integration</span>
+                            <span class="feature-tag">Admin Dashboard</span>
+                            <span class="feature-tag">Inventory Management</span>
+                        </div>
                         <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Bootstrap</span>
-                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag html">HTML</span>
+                            <span class="tech-tag css">CSS</span>
+                            <span class="tech-tag js">JavaScript</span>
+                            <span class="tech-tag php">PHP</span>
+                            <span class="tech-tag mysql">MySQL</span>
+                            <span class="tech-tag bootstrap">Bootstrap</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-category="fullstack">
                     <div class="project-image">
                         <img src="assets/barmms.png" alt="Barangay Management System">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/BARMMS" class="project-link" target="_blank">
+                                <a href="https://github.com/BARMMS" class="project-link" target="_blank" data-tooltip="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="https://github.com/Riuoo/BARMMS" class="project-link" target="_blank">
+                                <a href="https://github.com/Riuoo/BARMMS" class="project-link" target="_blank" data-tooltip="View Code">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">Completed</span>
+                        </div>
                     </div>
                     <div class="project-content">
+                        <div class="project-header">
                         <h3 class="project-title">Barangay Management System</h3>
+                            <div class="project-year">2024</div>
+                        </div>
                         <p class="project-description">
-                            A collaborative task management application with real-time updates and team collaboration features.
+                            A comprehensive management system for barangay operations featuring citizen registration, 
+                            document processing, and administrative tools for local government efficiency.
                         </p>
+                        <div class="project-features">
+                            <span class="feature-tag">Citizen Registration</span>
+                            <span class="feature-tag">Document Management</span>
+                            <span class="feature-tag">Real-time Updates</span>
+                            <span class="feature-tag">Admin Dashboard</span>
+                        </div>
                         <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Laravel</span>
-                            <span class="tech-tag">Tailwind CSS</span>
-                            <span class="tech-tag">Alphine.js</span>
+                            <span class="tech-tag html">HTML5</span>
+                            <span class="tech-tag css">CSS3</span>
+                            <span class="tech-tag js">JavaScript</span>
+                            <span class="tech-tag php">PHP</span>
+                            <span class="tech-tag laravel">Laravel</span>
+                            <span class="tech-tag tailwind">Tailwind CSS</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-category="mobile">
                     <div class="project-image">
                         <img src="assets/checkme.png" alt="CheckMe">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/Riuoo/CheckMe" class="project-link" target="_blank">
+                                <a href="https://github.com/Riuoo/CheckMe" class="project-link" target="_blank" data-tooltip="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="https://github.com/Riuoo/CheckMe" class="project-link" target="_blank">
+                                <a href="https://github.com/Riuoo/CheckMe" class="project-link" target="_blank" data-tooltip="View Code">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
+                        <div class="project-status">
+                            <span class="status-badge completed">Completed</span>
+                        </div>
                     </div>
                     <div class="project-content">
+                        <div class="project-header">
                         <h3 class="project-title">CheckMe</h3>
+                            <div class="project-year">2024</div>
+                        </div>
                         <p class="project-description">
-                            A responsive weather dashboard with location-based forecasts and interactive charts.
+                            A mobile application for task management and productivity tracking with intuitive UI, 
+                            reminder notifications, and progress analytics.
                         </p>
+                        <div class="project-features">
+                            <span class="feature-tag">Task Management</span>
+                            <span class="feature-tag">Notifications</span>
+                            <span class="feature-tag">Progress Tracking</span>
+                            <span class="feature-tag">Mobile UI</span>
+                        </div>
                         <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">XML</span>
-                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag java">Java</span>
+                            <span class="tech-tag kotlin">Kotlin</span>
+                            <span class="tech-tag android">Android</span>
+                            <span class="tech-tag xml">XML</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-category="frontend">
                     <div class="project-image">
-                        <img src="assets/project4.jpg" alt="Project 4">
+                        <img src="assets/portfolio.png" alt="Portfolio Website">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link" target="_blank">
+                                <a href="https://roderick-tajos.netlify.app/" class="project-link" target="_blank" data-tooltip="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
-                                <a href="#" class="project-link" target="_blank">
+                                <a href="https://github.com/Riuoo/My-Portfolio" class="project-link" target="_blank" data-tooltip="View Code">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Blog Platform</h3>
-                        <p class="project-description">
-                            A modern blog platform with markdown support, comment system, and SEO optimization.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">Prisma</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Tailwind</span>
+                        <div class="project-status">
+                            <span class="status-badge completed">Completed</span>
                         </div>
                     </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <div class="project-year">2025</div>
+                        </div>
+                        <p class="project-description">
+                            A responsive portfolio website showcasing projects and skills with modern design, 
+                            smooth animations, and interactive elements built with vanilla technologies.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag">Responsive Design</span>
+                            <span class="feature-tag">Dark/Light Mode</span>
+                            <span class="feature-tag">Smooth Animations</span>
+                            <span class="feature-tag">Contact Form</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag html">HTML5</span>
+                            <span class="tech-tag css">CSS3</span>
+                            <span class="tech-tag js">JavaScript</span>
+                            <span class="tech-tag netlify">Netlify</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- No Projects Message -->
+            <div class="no-projects-message" id="no-projects-message" style="display: none;">
+                <div class="no-projects-content">
+                    <div class="no-projects-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="no-projects-title">No Projects Found</h3>
+                    <p class="no-projects-description">
+                        No projects match the selected filter. Try selecting a different category or check back later for new projects.
+                    </p>
+                    <button class="btn btn-primary" onclick="document.querySelector('.project-filter .filter-btn[data-filter=\'all\']').click()">
+                        <span>View All Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -235,7 +368,7 @@
                                 </div>
                                 <div class="certificate-content">
                                     <h3>Microsoft Productivity Tools</h3>
-                                    <p>Complete Microsoft Productivity Tools course covering Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Outlook, Microsoft Teams, Microsoft OneDrive, Microsoft SharePoint, Microsoft OneNote, Microsoft Visio, Microsoft Project, Microsoft Access, Microsoft Publisher, Microsoft InfoPath, Microsoft FrontPage, Microsoft Expression Web, Microsoft Expression Blend, Microsoft Expression Encoder, Microsoft Expression Design, Microsoft Expression Interactive.</p>
+                                    <p>Complete Microsoft Productivity Tools course covering Word, Excel, PowerPoint, Outlook, Teams, OneDrive, SharePoint, OneNote, Visio, Project, Access, and Publisher.</p>
                                     <span class="certificate-date">2022</span>
                                 </div>
                             </div>
@@ -306,76 +439,336 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
+            <div class="section-header">
             <h2 class="section-title">Technical Skills</h2>
             <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
             
+            <!-- Skills Filter -->
+            <div class="skills-filter">
+                <button class="filter-btn active" data-filter="all">All Skills</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+
+            <!-- Skills Grid -->
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                <!-- Frontend Skills -->
+                <div class="skill-category" data-category="frontend">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>Creating beautiful and responsive user interfaces</p>
+                    </div>
                     <div class="skill-items">
-                        <div class="skill-item">
+                        <div class="skill-item" data-skill="html">
+                            <div class="skill-info">
+                                <div class="skill-icon">
                             <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">HTML5</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="95"></div>
+                                </div>
+                                <span class="progress-text">95%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
+
+                        <div class="skill-item" data-skill="css">
+                            <div class="skill-info">
+                                <div class="skill-icon">
                             <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">CSS3</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="90"></div>
+                                </div>
+                                <span class="progress-text">90%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
+
+                        <div class="skill-item" data-skill="javascript">
+                            <div class="skill-info">
+                                <div class="skill-icon">
                             <i class="fab fa-js-square"></i>
-                            <span>JavaScript</span>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="85"></div>
+                                </div>
+                                <span class="progress-text">85%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-php"></i>
-                            <span>PHP</span>
+
+                        <div class="skill-item" data-skill="bootstrap">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-bootstrap"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Bootstrap</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="80"></div>
+                                </div>
+                                <span class="progress-text">80%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-java"></i>
-                            <span>Java</span>
+
+                        <div class="skill-item" data-skill="tailwind">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-tailwind-css"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Tailwind CSS</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="70"></div>
+                                </div>
+                                <span class="progress-text">70%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
+                <!-- Backend Skills -->
+                <div class="skill-category" data-category="backend">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <p>Building robust server-side applications and APIs</p>
+                    </div>
                     <div class="skill-items">
-                        <div class="skill-item">
+                        <div class="skill-item" data-skill="php">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-php"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">PHP</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="85"></div>
+                                </div>
+                                <span class="progress-text">85%</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-skill="laravel">
+                            <div class="skill-info">
+                                <div class="skill-icon">
                             <i class="fab fa-laravel"></i>
-                            <span>Laravel</span>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Laravel</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="75"></div>
+                                </div>
+                                <span class="progress-text">75%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-tailwind-css"></i>
-                            <span>Tailwind CSS</span>
+
+                        <div class="skill-item" data-skill="mysql">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="80"></div>
+                                </div>
+                                <span class="progress-text">80%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-bootstrap"></i>
-                            <span>Bootstrap</span>
+
+                        <div class="skill-item" data-skill="java">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="70"></div>
+                                </div>
+                                <span class="progress-text">70%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-alphine"></i>
-                            <span>Alphine.js</span>
+                    </div>
+                </div>
+
+                <!-- Mobile Development -->
+                <div class="skill-category" data-category="mobile">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Development</h3>
+                        <p>Creating native and cross-platform mobile applications</p>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="android">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-android"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Android</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="75"></div>
+                                </div>
+                                <span class="progress-text">75%</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-skill="kotlin">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-kotlin"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Kotlin</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="70"></div>
+                                </div>
+                                <span class="progress-text">70%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="skill-category">
+                <!-- Tools & Technologies -->
+                <div class="skill-category" data-category="tools">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
                     <h3>Tools & Technologies</h3>
+                        <p>Development tools and version control systems</p>
+                    </div>
                     <div class="skill-items">
-                        <div class="skill-item">
+                        <div class="skill-item" data-skill="git">
+                            <div class="skill-info">
+                                <div class="skill-icon">
                             <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Git</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="85"></div>
+                                </div>
+                                <span class="progress-text">85%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
+
+                        <div class="skill-item" data-skill="github">
+                            <div class="skill-info">
+                                <div class="skill-icon">
                             <i class="fab fa-github"></i>
-                            <span>GitHub</span>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">GitHub</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="85"></div>
+                                </div>
+                                <span class="progress-text">85%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MySQL</span>
+
+                        <div class="skill-item" data-skill="vscode">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">VS Code</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="90"></div>
+                                </div>
+                                <span class="progress-text">90%</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <i class="fas fa-terminal"></i>
-                            <span>Vs Code</span>
+
+                        <div class="skill-item" data-skill="alpine">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <span class="skill-name">Alpine.js</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="65"></div>
+                                </div>
+                                <span class="progress-text">65%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -393,11 +786,11 @@
                         Download my resume to learn more about my experience, education, and achievements.
                     </p>
                     <div class="resume-buttons">
-                        <a href="assets/resume.pdf" class="btn btn-primary" download>
+                        <a href="assets/my-resume.pdf" class="btn btn-primary" download>
                             <i class="fas fa-download"></i>
                             Download Resume
                         </a>
-                        <a href="assets/resume.pdf" class="btn btn-secondary" target="_blank">
+                        <a href="assets/my-resume.pdf" class="btn btn-secondary" target="_blank">
                             <i class="fas fa-eye"></i>
                             View Resume
                         </a>
@@ -454,26 +847,79 @@
                     <p class="hidden">
                         <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                     </p>
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" required>
-                        <label for="name">Your Name</label>
+                    
+                    <!-- Form Status Messages -->
+                    <div class="form-status" id="form-status" style="display: none;">
+                        <div class="status-message">
+                            <i class="status-icon"></i>
+                            <span class="status-text"></span>
+                        </div>
                     </div>
+                    
                     <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+                        <label for="name">Your Name</label>
+                            <div class="input-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="error-message" id="name-error"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="input-wrapper">
                         <input type="email" id="email" name="email" required>
                         <label for="email">Your Email</label>
+                            <div class="input-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="error-message" id="email-error"></div>
+                        </div>
                     </div>
+                    
                     <div class="form-group">
-                        <input type="text" id="subject" name="subject" required>
+                        <div class="input-wrapper">
+                            <input type="text" id="subject" name="subject" required minlength="5" maxlength="100">
                         <label for="subject">Subject</label>
+                            <div class="input-icon">
+                                <i class="fas fa-tag"></i>
+                            </div>
+                            <div class="error-message" id="subject-error"></div>
+                        </div>
                     </div>
+                    
                     <div class="form-group">
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="input-wrapper">
+                            <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000"></textarea>
                         <label for="message">Your Message</label>
+                            <div class="input-icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="error-message" id="message-error"></div>
+                            <div class="char-counter">
+                                <span id="char-count">0</span>/1000
+                            </div>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                            <span class="btn-text">
                         <i class="fas fa-paper-plane"></i>
                         Send Message
+                            </span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Sending...
+                            </span>
                     </button>
+                        
+                        <div class="form-note">
+                            <i class="fas fa-shield-alt"></i>
+                            Your information is secure and will not be shared.
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -508,6 +954,11 @@
         <input type="text" name="subject" />
         <textarea name="message"></textarea>
     </form>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Scripts -->
     <script src="js/script.js"></script>
