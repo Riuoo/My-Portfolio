@@ -257,8 +257,8 @@ function initTypingEffect() {
     if (!typingElement) return;
     
     const texts = [
-        'IT Student & Aspiring Developer',
-        'Full-Stack Developer',
+        'IT Student',
+        'Aspiring Developer',
         'Problem Solver',
         'Tech Enthusiast'
     ];
